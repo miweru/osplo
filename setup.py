@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="osplo",
-    version="0.1.10",
+    version="0.1.11",
     packages=["osplo"], #die enthaltenden Packages
     #scripts=[],
     license="GNU GENERAL PUBLIC LICENSE V3 OR LATER (GPLV3+)",
@@ -15,10 +15,14 @@ setup(
     "somajo>=1.8.3",
     "smart_open>=1.8.0",],
     python_requires=">=3.5",
+    url="https://github.com/miweru/osplo",
      classifiers=[
         "Programming Language :: Python :: 3",
+        'Development Status :: 4 - Beta',
         "LICENSE :: OSI APPROVED :: GNU GENERAL PUBLIC LICENSE V3 OR LATER (GPLV3+)",
         "Operating System :: POSIX :: LINUX",
+        "TOPIC :: SOFTWARE DEVELOPMENT :: LIBRARIES :: PYTHON MODULES",
+        "TOPIC :: TEXT PROCESSING :: LINGUISTIC",
     ],
     #package_data={
     #}
