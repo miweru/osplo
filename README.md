@@ -10,12 +10,16 @@ Es greift auf smart_open (Mit dem man auch komprimierte Archive und auch Webress
 Das Endergebnis ist nicht besonders schnell, erlaubt aber direkte Iteration über eine Datei als wäre sie im One-Sentence-per-Line Format, ohne die Datei gleichzeitig einlesen zu müssen.
 
 z.B:
-.. code:: python
-    from osplo import OSLOpen
-    for sentence in OSLOpen("https://www.gnu.org/licenses/gpl.txt"): 
-        print(sentence) 
+```python
+from osplo import OSLOpen
+for sentence in OSLOpen("https://www.gnu.org/licenses/gpl.txt"): 
+    print(sentence)
+    
+```
+Die ersten Zeilen des Outputs würden dann so aussehen:
 
-Output::                                                                                                                                                                                               
+```
+                                                                                                                                                                          
     GNU GENERAL PUBLIC LICENSE Version 3 , 29 June 2007 Copyright ( C ) 2007 Free Software Foundation , Inc. < https://fsf.org/> Everyone is permitted to copy and distribute verbatim copies of this license document , but changing it is not allowed .
     Preamble The GNU General Public License is a free , copyleft license for software and other kinds of works .
     The licenses for most software and other practical works are designed to take away your freedom to share and change the works .
@@ -28,6 +32,7 @@ Output::
     Therefore , you have certain responsibilities if you distribute copies of the software , or if you modify it : responsibilities to respect the freedom of others .
     For example , if you distribute copies of such a program , whether gratis or for a fee , you must pass on to the recipients the same freedoms that you received .
     You must make sure that they , too , receive or can get the source code .
+``` 
 
 
 Hinweis:
