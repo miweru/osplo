@@ -3,7 +3,7 @@ OSPLO: OneSentencePerLineOpener
 
 - Viele Computerlinguistische Verfahren profitieren davon, wenn der Text im one-sentence-per line Format vorliegt (z.b die Erstellung von dünnbesetzten Scipy Matrizen für Dokument-Term Matrizen, oder auch einfach Textauswertungen bis hin zu dem Input Format für Gensim.
 
-- Oft ist das nicht der Fall, und in vielen Fällen ist es zu speicherintensiv, einen kompletten Korpus einzulesen, um dann eine Tokenisierung und Satztrennung durchzuführen.
+- Oft ist das nicht der Fall, und in vielen Fällen ist es zu speicherintensiv, ein komplettes Korpus einzulesen, um dann eine Tokenisierung und Satztrennung durchzuführen.
 
 - OSPLO ist die naivste Lösung für dieses Problem.
 Es greift auf smart_open (Mit dem man auch komprimierte Archive und auch Webressourcen öffnen kann) zurück und verwendet den sehr guten Tokenizer und Satzsplitter SoMaJo.
